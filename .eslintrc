@@ -1,0 +1,37 @@
+{
+ "extends": ["airbnb", "eslint-config-react-app", "prettier", "plugin:jest/recommended"],
+  "overrides": [
+    {
+      "files": ["**/*.ts?(x)"],
+      "rules": {
+        "import/no-duplicates": 0,
+        "no-duplicate-imports": "off",
+        "react/prop-types": 0
+      }
+    }
+  ],
+  "plugins": ["prettier", "jest"],
+  "env": {
+    "jest/globals": true,
+    "jest": true
+  },
+
+  "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "import/order": 0,
+
+    "react/jsx-filename-extension": 0,
+    "react/no-unescaped-entities": 0,
+    "react-hooks/exhaustive-deps": 0,
+
+    "arrow-body-style": "off",
+  },
+
+  "globals": {
+    "page": true,
+    "browser": true,
+    "context": true
+  }
+}
